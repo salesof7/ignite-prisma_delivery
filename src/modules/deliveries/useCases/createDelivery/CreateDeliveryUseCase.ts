@@ -1,6 +1,5 @@
 import { Deliveries } from "@prisma/client";
 import { prisma } from "../../../../database/prismaClient";
-import { AppError } from "../../../../errors/AppError";
 
 interface ICreateDelivery {
   item_name: string;

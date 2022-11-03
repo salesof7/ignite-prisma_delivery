@@ -29,7 +29,7 @@ class AuthenticateDeliverymanUseCase {
       throw new AppError("Username or password invalid!");
     }
 
-    const token = sign({ username }, "251f2638ef112921bdc0a98609f871c3", {
+    const token = sign({ username }, "66bd3a7351c47b6e1a32227d8c2aee58", {
       subject: deliveryman.id,
       expiresIn: "1d",
     });
