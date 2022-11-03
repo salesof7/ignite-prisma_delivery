@@ -6,6 +6,7 @@ class FindAllAvailableUseCase {
     const deliveries = await prisma.deliveries.findMany({
       where: {
         end_at: null as any,
+        id_deliveryman: null as any,
       },
     });
 
